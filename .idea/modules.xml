@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ControleBancario.iml" filepath="$PROJECT_DIR$/ControleBancario.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ControleBancario-grailsPlugins.iml" filepath="$PROJECT_DIR$/ControleBancario-grailsPlugins.iml" />
     </modules>
   </component>
 </project>
