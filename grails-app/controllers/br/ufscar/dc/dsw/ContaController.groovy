@@ -110,4 +110,13 @@ class ContaController {
         respond consulta.list(params), view: 'index', model: [contaInstanceCount: consulta.size()]
 
     }
+
+    def listarContasComSaldoSuperiorA(double valorSaldo, Integer max) {
+        valorSaldo = valorSaldo?(valorSaldo>0?valorSaldo:0):0
+        params.max = Math.min(max ?: 10, 100)
+        def consulta = Conta.where {
+            ge('saldo', valorSaldo)
+        }
+        respond consulta.list(params), view: 'index', model: [contaInstanceCount: consulta.size(), valorSaldo: valorSaldo]
+    }
 }

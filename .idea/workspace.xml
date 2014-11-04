@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c711cbe2-7b24-4f7d-b6d1-5bb6cb53f2f4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/br/ufscar/dc/dsw/ContaController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/br/ufscar/dc/dsw/ContaController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/conta/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/conta/index.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ControleBancario.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,8 +54,8 @@
       <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/conta/index.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.425532" vertical-offset="90" max-vertical-offset="915">
-              <caret line="23" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.297873" vertical-offset="0" max-vertical-offset="1035">
+              <caret line="26" column="18" selection-start-line="20" selection-start-column="11" selection-end-line="26" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -72,11 +74,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContaController.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ContaController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/br/ufscar/dc/dsw/ContaController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.52380955" vertical-offset="1266" max-vertical-offset="1770">
-              <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="111" selection-end-column="5" />
+            <state vertical-scroll-proportion="-14.73913" vertical-offset="1386" max-vertical-offset="1905">
+              <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContaClienteController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/br/ufscar/dc/dsw/ContaClienteController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.73913" vertical-offset="1041" max-vertical-offset="1635">
+              <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.gsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/contaCliente/index.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5" vertical-offset="15" max-vertical-offset="900">
+              <caret line="17" column="78" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -99,7 +121,6 @@
         <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/br/ufscar/dc/dsw/ClienteFisico.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/br/ufscar/dc/dsw/ClienteJuridico.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/br/ufscar/dc/dsw/ContaClienteController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/br/ufscar/dc/dsw/Conta.groovy" />
         <option value="$PROJECT_DIR$/application.properties" />
         <option value="$PROJECT_DIR$/grails-app/domain/br/ufscar/dc/dsw/Cliente.groovy" />
@@ -111,6 +132,8 @@
         <option value="$PROJECT_DIR$/grails-app/i18n/messages.properties" />
         <option value="$PROJECT_DIR$/grails-app/views/conta/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/br/ufscar/dc/dsw/ContaController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/br/ufscar/dc/dsw/ContaClienteController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/contaCliente/index.gsp" />
       </list>
     </option>
   </component>
@@ -637,12 +660,12 @@
       <created>1414955507501</created>
       <updated>1414955507501</updated>
       <workItem from="1414955505467" duration="4088000" />
-      <workItem from="1415025697645" duration="15580000" />
+      <workItem from="1415025697645" duration="21317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19668000" />
+    <option name="totallyTimeSpent" value="25405000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -908,14 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/conta/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.425532" vertical-offset="90" max-vertical-offset="915">
-          <caret line="23" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/i18n/messages.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.5" vertical-offset="422" max-vertical-offset="945">
@@ -927,10 +942,50 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37381405" vertical-offset="3463" max-vertical-offset="9030">
+          <caret line="244" column="11" selection-start-line="244" selection-start-column="11" selection-end-line="244" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/br/ufscar/dc/dsw/ContaController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52380955" vertical-offset="1266" max-vertical-offset="1770">
-          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="111" selection-end-column="5" />
+        <state vertical-scroll-proportion="-14.73913" vertical-offset="1386" max-vertical-offset="1905">
+          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/conta/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.297873" vertical-offset="0" max-vertical-offset="1035">
+          <caret line="26" column="18" selection-start-line="20" selection-start-column="11" selection-end-line="26" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/br/ufscar/dc/dsw/ContaClienteController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.73913" vertical-offset="1041" max-vertical-offset="1635">
+          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/contaCliente/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5" vertical-offset="15" max-vertical-offset="900">
+          <caret line="17" column="78" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="78" />
           <folding />
         </state>
       </provider>

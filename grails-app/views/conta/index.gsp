@@ -16,7 +16,15 @@
                 <li><g:link class="list" action="listarContasComSaldoPositivo"><g:message code="conta.listarContasComSaldoPositivo.label"/></g:link></li>
 			</ul>
 		</div>
+        </div>
 		<div id="list-conta" class="content scaffold-list" role="main">
+            <div>
+                <g:form controller="conta" action="listarContasComSaldoSuperiorA">
+                    <p><label for="valor-saldo"><g:message code="conta.filtro.label" default="Filtrar contas com saldo igual ou superior a:"></g:message></label></p>
+                    <g:textField  id="valor-saldo" name="valorSaldo" value="0"></g:textField>
+                    <g:submitButton name="filtrar-conta" value="Filtrar"/>
+                </g:form>
+            </div>
 			<h1><g:message code="default.list.label" args="[entityName]" /></h1>
 			<g:if test="${flash.message}">
 				<div class="message" role="status">${flash.message}</div>
@@ -24,31 +32,31 @@
 			<table>
 			<thead>
 					<tr>
-					
+
 						<g:sortableColumn property="numero" title="${message(code: 'conta.numero.label', default: 'Numero')}" />
-					
+
 						<g:sortableColumn property="saldo" title="${message(code: 'conta.saldo.label', default: 'Saldo')}" />
-					
+
 						<g:sortableColumn property="abertura" title="${message(code: 'conta.abertura.label', default: 'Abertura')}" />
-					
+
 					</tr>
 				</thead>
 				<tbody>
 				<g:each in="${contaInstanceList}" status="i" var="contaInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
-					
+
 						<td><g:link action="show" id="${contaInstance.id}">${fieldValue(bean: contaInstance, field: "numero")}</g:link></td>
-					
+
 						<td>${fieldValue(bean: contaInstance, field: "saldo")}</td>
-					
+
 						<td><g:formatDate date="${contaInstance.abertura}" /></td>
-					
+
 					</tr>
 				</g:each>
 				</tbody>
 			</table>
 			<div class="pagination">
-				<g:paginate total="${contaInstanceCount ?: 0}" />
+				<g:paginate total="${contaInstanceCount ?: 0}" params="${[valorSaldo: valorSaldo?:0]}"/>
 			</div>
 		</div>
 	</body>
