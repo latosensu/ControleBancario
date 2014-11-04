@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c711cbe2-7b24-4f7d-b6d1-5bb6cb53f2f4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/controllers/br/ufscar/dc/dsw/ClienteFisicoController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/controllers/br/ufscar/dc/dsw/ClienteJuridicoController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/views/clienteFisico/_form.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/views/clienteFisico/create.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/views/clienteFisico/edit.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/views/clienteFisico/index.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/views/clienteFisico/show.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/views/clienteJuridico/_form.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/views/clienteJuridico/create.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/views/clienteJuridico/edit.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/views/clienteJuridico/index.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/views/clienteJuridico/show.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/br/ufscar/dc/dsw/Cliente.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/br/ufscar/dc/dsw/Cliente.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/br/ufscar/dc/dsw/ClienteFisicoControllerSpec.groovy" afterPath="$PROJECT_DIR$/test/unit/br/ufscar/dc/dsw/ClienteFisicoControllerSpec.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/br/ufscar/dc/dsw/ClienteJuridicoControllerSpec.groovy" afterPath="$PROJECT_DIR$/test/unit/br/ufscar/dc/dsw/ClienteJuridicoControllerSpec.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="c711cbe2-7b24-4f7d-b6d1-5bb6cb53f2f4" name="Default" comment="" />
     <ignored path="ControleBancario.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
@@ -123,21 +106,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClienteJuridicoController.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ClienteJuridicoController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/br/ufscar/dc/dsw/ClienteJuridicoController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6770833" vertical-offset="135" max-vertical-offset="1620">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state vertical-scroll-proportion="-7.173913" vertical-offset="900" max-vertical-offset="1620">
+              <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application.properties">
+      <file leaf-file-name="Transacao.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/br/ufscar/dc/dsw/Transacao.groovy">
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -178,6 +164,7 @@
         <option value="$PROJECT_DIR$/grails-app/domain/br/ufscar/dc/dsw/Cliente.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/br/ufscar/dc/dsw/ClienteFisicoController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/br/ufscar/dc/dsw/ClienteJuridicoController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/br/ufscar/dc/dsw/Transacao.groovy" />
       </list>
     </option>
   </component>
@@ -704,12 +691,12 @@
       <created>1414955507501</created>
       <updated>1414955507501</updated>
       <workItem from="1414955505467" duration="4088000" />
-      <workItem from="1415025697645" duration="12214000" />
+      <workItem from="1415025697645" duration="12713000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16302000" />
+    <option name="totallyTimeSpent" value="16801000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -733,7 +720,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="24" width="979" height="728" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -751,7 +738,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994923" sideWeight="0.49945474" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24972737" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3293718" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293718" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293718" sideWeight="0.50054526" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -950,8 +937,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/br/ufscar/dc/dsw/ClienteJuridicoController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6770833" vertical-offset="135" max-vertical-offset="1620">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state vertical-scroll-proportion="-7.173913" vertical-offset="900" max-vertical-offset="1620">
+          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/br/ufscar/dc/dsw/Transacao.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
           <folding />
         </state>
       </provider>
