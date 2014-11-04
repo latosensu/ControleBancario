@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c711cbe2-7b24-4f7d-b6d1-5bb6cb53f2f4" name="Default" comment="" />
+    <list default="true" id="c711cbe2-7b24-4f7d-b6d1-5bb6cb53f2f4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/br/ufscar/dc/dsw/ExtratoService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/br/ufscar/dc/dsw/ExtratoService.groovy" />
+    </list>
     <ignored path="ControleBancario.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
@@ -103,8 +105,8 @@
       <file leaf-file-name="ExtratoService.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/services/br/ufscar/dc/dsw/ExtratoService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.115830116" vertical-offset="0" max-vertical-offset="518">
-              <caret line="4" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.26061776" vertical-offset="0" max-vertical-offset="518">
+              <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -140,6 +142,7 @@
         <option value="$PROJECT_DIR$/grails-app/controllers/br/ufscar/dc/dsw/ContaController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/br/ufscar/dc/dsw/ContaClienteController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/contaCliente/index.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/services/br/ufscar/dc/dsw/ExtratoService.groovy" />
       </list>
     </option>
   </component>
@@ -710,12 +713,12 @@
       <created>1414955507501</created>
       <updated>1414955507501</updated>
       <workItem from="1414955505467" duration="4088000" />
-      <workItem from="1415025697645" duration="23138000" />
+      <workItem from="1415025697645" duration="23657000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27226000" />
+    <option name="totallyTimeSpent" value="27745000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1042,8 +1045,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/br/ufscar/dc/dsw/ExtratoService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.115830116" vertical-offset="0" max-vertical-offset="518">
-          <caret line="4" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.26061776" vertical-offset="0" max-vertical-offset="518">
+          <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
           <folding />
         </state>
       </provider>
