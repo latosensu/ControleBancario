@@ -1,7 +1,6 @@
 package br.ufscar.dc.dsw
 
 
-
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
@@ -12,7 +11,7 @@ class ContaController {
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
-        respond Conta.list(params), model:[contaInstanceCount: Conta.count()]
+        respond Conta.list(params), model: [contaInstanceCount: Conta.count()]
     }
 
     def show(Conta contaInstance) {
@@ -31,11 +30,11 @@ class ContaController {
         }
 
         if (contaInstance.hasErrors()) {
-            respond contaInstance.errors, view:'create'
+            respond contaInstance.errors, view: 'create'
             return
         }
 
-        contaInstance.save flush:true
+        contaInstance.save flush: true
 
         request.withFormat {
             form multipartForm {
@@ -58,18 +57,18 @@ class ContaController {
         }
 
         if (contaInstance.hasErrors()) {
-            respond contaInstance.errors, view:'edit'
+            respond contaInstance.errors, view: 'edit'
             return
         }
 
-        contaInstance.save flush:true
+        contaInstance.save flush: true
 
         request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.updated.message', args: [message(code: 'Conta.label', default: 'Conta'), contaInstance.id])
                 redirect contaInstance
             }
-            '*'{ respond contaInstance, [status: OK] }
+            '*' { respond contaInstance, [status: OK] }
         }
     }
 
@@ -81,14 +80,14 @@ class ContaController {
             return
         }
 
-        contaInstance.delete flush:true
+        contaInstance.delete flush: true
 
         request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.deleted.message', args: [message(code: 'Conta.label', default: 'Conta'), contaInstance.id])
-                redirect action:"index", method:"GET"
+                redirect action: "index", method: "GET"
             }
-            '*'{ render status: NO_CONTENT }
+            '*' { render status: NO_CONTENT }
         }
     }
 
@@ -98,7 +97,17 @@ class ContaController {
                 flash.message = message(code: 'default.not.found.message', args: [message(code: 'conta.label', default: 'Conta'), params.id])
                 redirect action: "index", method: "GET"
             }
-            '*'{ render status: NOT_FOUND }
+            '*' { render status: NOT_FOUND }
         }
+    }
+
+    def listarContasComSaldoPositivo(Integer max) {
+
+        params.max = Math.min(max ?: 10, 100)
+        def consulta = Conta.where {
+            ge('saldo', 200)
+        }
+        respond consulta.list(params), view: 'index', model: [contaInstanceCount: consulta.size()]
+
     }
 }
