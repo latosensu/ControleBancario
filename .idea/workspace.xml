@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c711cbe2-7b24-4f7d-b6d1-5bb6cb53f2f4" name="Default" comment="" />
+    <list default="true" id="c711cbe2-7b24-4f7d-b6d1-5bb6cb53f2f4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/br/ufscar/dc/dsw/Transacao.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/br/ufscar/dc/dsw/Transacao.groovy" />
+    </list>
     <ignored path="ControleBancario.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
@@ -24,19 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Conta.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/br/ufscar/dc/dsw/Conta.groovy">
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0405405" vertical-offset="0" max-vertical-offset="315">
-              <caret line="15" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Cliente.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/br/ufscar/dc/dsw/Cliente.groovy">
           <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
@@ -122,17 +111,27 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.36241612" vertical-offset="48" max-vertical-offset="495">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/conta/_form.gsp">
+      <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/transacao/index.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="9.085107" vertical-offset="427" max-vertical-offset="825">
+            <state vertical-scroll-proportion="4.744681" vertical-offset="223" max-vertical-offset="465">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransacaoController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/br/ufscar/dc/dsw/TransacaoController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="23.47826" vertical-offset="540" max-vertical-offset="1620">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -164,6 +163,7 @@
         <option value="$PROJECT_DIR$/grails-app/domain/br/ufscar/dc/dsw/Cliente.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/br/ufscar/dc/dsw/ClienteFisicoController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/br/ufscar/dc/dsw/ClienteJuridicoController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/br/ufscar/dc/dsw/TransacaoController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/br/ufscar/dc/dsw/Transacao.groovy" />
       </list>
     </option>
@@ -691,12 +691,12 @@
       <created>1414955507501</created>
       <updated>1414955507501</updated>
       <workItem from="1414955505467" duration="4088000" />
-      <workItem from="1415025697645" duration="12713000" />
+      <workItem from="1415025697645" duration="13041000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16801000" />
+    <option name="totallyTimeSpent" value="17129000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -943,13 +943,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/br/ufscar/dc/dsw/TransacaoController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="23.47826" vertical-offset="540" max-vertical-offset="1620">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/transacao/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.744681" vertical-offset="223" max-vertical-offset="465">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/br/ufscar/dc/dsw/Transacao.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.36241612" vertical-offset="48" max-vertical-offset="495">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding />
         </state>
       </provider>

@@ -11,7 +11,7 @@ class Transacao {
         data (nullable: false)
         quem (nullable: false)
         motivo (nullable: false)
-        tipo (nullable: false, inList: CREDITO, DEBITO)
+        tipo (nullable: false, inList: [CREDITO, DEBITO])
     }
 
     Date data
