@@ -2,6 +2,8 @@ package br.ufscar.dc.dsw
 
 class ContaCliente {
 
+    static hasMany = [transacoes: Transacao]
+
     static constraints = {
         cliente (nullable: false)
         conta (nullable: false, unique: 'cliente')

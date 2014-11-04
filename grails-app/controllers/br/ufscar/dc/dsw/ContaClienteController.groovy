@@ -1,6 +1,7 @@
 package br.ufscar.dc.dsw
 
 
+
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
@@ -11,7 +12,7 @@ class ContaClienteController {
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
-        respond ContaCliente.list(params), model: [contaClienteInstanceCount: ContaCliente.count()]
+        respond ContaCliente.list(params), model:[contaClienteInstanceCount: ContaCliente.count()]
     }
 
     def show(ContaCliente contaClienteInstance) {
@@ -30,11 +31,11 @@ class ContaClienteController {
         }
 
         if (contaClienteInstance.hasErrors()) {
-            respond contaClienteInstance.errors, view: 'create'
+            respond contaClienteInstance.errors, view:'create'
             return
         }
 
-        contaClienteInstance.save flush: true
+        contaClienteInstance.save flush:true
 
         request.withFormat {
             form multipartForm {
@@ -57,18 +58,18 @@ class ContaClienteController {
         }
 
         if (contaClienteInstance.hasErrors()) {
-            respond contaClienteInstance.errors, view: 'edit'
+            respond contaClienteInstance.errors, view:'edit'
             return
         }
 
-        contaClienteInstance.save flush: true
+        contaClienteInstance.save flush:true
 
         request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.updated.message', args: [message(code: 'ContaCliente.label', default: 'ContaCliente'), contaClienteInstance.id])
                 redirect contaClienteInstance
             }
-            '*' { respond contaClienteInstance, [status: OK] }
+            '*'{ respond contaClienteInstance, [status: OK] }
         }
     }
 
@@ -80,14 +81,14 @@ class ContaClienteController {
             return
         }
 
-        contaClienteInstance.delete flush: true
+        contaClienteInstance.delete flush:true
 
         request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.deleted.message', args: [message(code: 'ContaCliente.label', default: 'ContaCliente'), contaClienteInstance.id])
-                redirect action: "index", method: "GET"
+                redirect action:"index", method:"GET"
             }
-            '*' { render status: NO_CONTENT }
+            '*'{ render status: NO_CONTENT }
         }
     }
 
@@ -97,7 +98,7 @@ class ContaClienteController {
                 flash.message = message(code: 'default.not.found.message', args: [message(code: 'contaCliente.label', default: 'ContaCliente'), params.id])
                 redirect action: "index", method: "GET"
             }
-            '*' { render status: NOT_FOUND }
+            '*'{ render status: NOT_FOUND }
         }
     }
 }

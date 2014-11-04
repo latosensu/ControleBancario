@@ -50,6 +50,17 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${contaClienteInstance?.transacoes}">
+				<li class="fieldcontain">
+					<span id="transacoes-label" class="property-label"><g:message code="contaCliente.transacoes.label" default="Transacoes" /></span>
+					
+						<g:each in="${contaClienteInstance.transacoes}" var="t">
+						<span class="property-value" aria-labelledby="transacoes-label"><g:link controller="transacao" action="show" id="${t.id}">${t?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:contaClienteInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">
