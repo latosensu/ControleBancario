@@ -24,12 +24,15 @@ class ExtratoService {
 
         Calendar calendar = Calendar.getInstance(); //data atual
         Date dataMaxima = calendar.time
-        calendar.add(-numeroDias, Calendar.DAY_OF_YEAR); //subtraindo o número de dias selecionado
+        calendar.add(Calendar.DAY_OF_YEAR, -numeroDias); //subtraindo o número de dias selecionado
         Date dataMinima = calendar.time
 
-        return contaCliente.transacoes.findResults {
-            le('data', dataMaxima)
-            ge('data', dataMinima)
+        return contaCliente.transacoes.collect{
+            if (it.data.compareTo(dataMaxima)<=0 &&
+                    it.data.compareTo(dataMinima)>=0){
+                it
+            }
+
         }
 
     }
