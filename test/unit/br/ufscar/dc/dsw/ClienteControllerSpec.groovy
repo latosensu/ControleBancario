@@ -5,9 +5,9 @@ package br.ufscar.dc.dsw
 import grails.test.mixin.*
 import spock.lang.*
 
-@TestFor(ClienteFisicoController)
-@Mock(ClienteFisico)
-class ClienteFisicoControllerSpec extends Specification {
+@TestFor(ClienteController)
+@Mock(Cliente)
+class ClienteControllerSpec extends Specification {
 
     def populateValidParams(params) {
         assert params != null
@@ -21,8 +21,8 @@ class ClienteFisicoControllerSpec extends Specification {
             controller.index()
 
         then:"The model is correct"
-            !model.clienteFisicoInstanceList
-            model.clienteFisicoInstanceCount == 0
+            !model.clienteInstanceList
+            model.clienteInstanceCount == 0
     }
 
     void "Test the create action returns the correct model"() {
@@ -30,7 +30,7 @@ class ClienteFisicoControllerSpec extends Specification {
             controller.create()
 
         then:"The model is correctly created"
-            model.clienteFisicoInstance!= null
+            model.clienteInstance!= null
     }
 
     void "Test the save action correctly persists an instance"() {
@@ -38,25 +38,25 @@ class ClienteFisicoControllerSpec extends Specification {
         when:"The save action is executed with an invalid instance"
             request.contentType = FORM_CONTENT_TYPE
             request.method = 'POST'
-            def clienteFisico = new ClienteFisico()
-            clienteFisico.validate()
-            controller.save(clienteFisico)
+            def cliente = new Cliente()
+            cliente.validate()
+            controller.save(cliente)
 
         then:"The create view is rendered again with the correct model"
-            model.clienteFisicoInstance!= null
+            model.clienteInstance!= null
             view == 'create'
 
         when:"The save action is executed with a valid instance"
             response.reset()
             populateValidParams(params)
-            clienteFisico = new ClienteFisico(params)
+            cliente = new Cliente(params)
 
-            controller.save(clienteFisico)
+            controller.save(cliente)
 
         then:"A redirect is issued to the show action"
-            response.redirectedUrl == '/clienteFisico/show/1'
+            response.redirectedUrl == '/cliente/show/1'
             controller.flash.message != null
-            ClienteFisico.count() == 1
+            Cliente.count() == 1
     }
 
     void "Test that the show action returns the correct model"() {
@@ -68,11 +68,11 @@ class ClienteFisicoControllerSpec extends Specification {
 
         when:"A domain instance is passed to the show action"
             populateValidParams(params)
-            def clienteFisico = new ClienteFisico(params)
-            controller.show(clienteFisico)
+            def cliente = new Cliente(params)
+            controller.show(cliente)
 
         then:"A model is populated containing the domain instance"
-            model.clienteFisicoInstance == clienteFisico
+            model.clienteInstance == cliente
     }
 
     void "Test that the edit action returns the correct model"() {
@@ -84,11 +84,11 @@ class ClienteFisicoControllerSpec extends Specification {
 
         when:"A domain instance is passed to the edit action"
             populateValidParams(params)
-            def clienteFisico = new ClienteFisico(params)
-            controller.edit(clienteFisico)
+            def cliente = new Cliente(params)
+            controller.edit(cliente)
 
         then:"A model is populated containing the domain instance"
-            model.clienteFisicoInstance == clienteFisico
+            model.clienteInstance == cliente
     }
 
     void "Test the update action performs an update on a valid domain instance"() {
@@ -98,28 +98,28 @@ class ClienteFisicoControllerSpec extends Specification {
             controller.update(null)
 
         then:"A 404 error is returned"
-            response.redirectedUrl == '/clienteFisico/index'
+            response.redirectedUrl == '/cliente/index'
             flash.message != null
 
 
         when:"An invalid domain instance is passed to the update action"
             response.reset()
-            def clienteFisico = new ClienteFisico()
-            clienteFisico.validate()
-            controller.update(clienteFisico)
+            def cliente = new Cliente()
+            cliente.validate()
+            controller.update(cliente)
 
         then:"The edit view is rendered again with the invalid instance"
             view == 'edit'
-            model.clienteFisicoInstance == clienteFisico
+            model.clienteInstance == cliente
 
         when:"A valid domain instance is passed to the update action"
             response.reset()
             populateValidParams(params)
-            clienteFisico = new ClienteFisico(params).save(flush: true)
-            controller.update(clienteFisico)
+            cliente = new Cliente(params).save(flush: true)
+            controller.update(cliente)
 
         then:"A redirect is issues to the show action"
-            response.redirectedUrl == "/clienteFisico/show/$clienteFisico.id"
+            response.redirectedUrl == "/cliente/show/$cliente.id"
             flash.message != null
     }
 
@@ -130,23 +130,23 @@ class ClienteFisicoControllerSpec extends Specification {
             controller.delete(null)
 
         then:"A 404 is returned"
-            response.redirectedUrl == '/clienteFisico/index'
+            response.redirectedUrl == '/cliente/index'
             flash.message != null
 
         when:"A domain instance is created"
             response.reset()
             populateValidParams(params)
-            def clienteFisico = new ClienteFisico(params).save(flush: true)
+            def cliente = new Cliente(params).save(flush: true)
 
         then:"It exists"
-            ClienteFisico.count() == 1
+            Cliente.count() == 1
 
         when:"The domain instance is passed to the delete action"
-            controller.delete(clienteFisico)
+            controller.delete(cliente)
 
         then:"The instance is deleted"
-            ClienteFisico.count() == 0
-            response.redirectedUrl == '/clienteFisico/index'
+            Cliente.count() == 0
+            response.redirectedUrl == '/cliente/index'
             flash.message != null
     }
 }

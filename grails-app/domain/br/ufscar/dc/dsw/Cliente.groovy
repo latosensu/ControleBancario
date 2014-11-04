@@ -1,6 +1,9 @@
 package br.ufscar.dc.dsw
 
 abstract class Cliente {
+
+    static hasMany = [contasCliente: ContaCliente]
+
     public static final String ATIVO = "Ativo"
     public static final String INATIVO = "Inativo"
 
