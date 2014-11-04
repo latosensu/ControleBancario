@@ -29,3 +29,21 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: contaInstance, field: 'contasCliente', 'error')} ">
+	<label for="contasCliente">
+		<g:message code="conta.contasCliente.label" default="Contas Cliente" />
+		
+	</label>
+	
+<ul class="one-to-many">
+<g:each in="${contaInstance?.contasCliente?}" var="c">
+    <li><g:link controller="contaCliente" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="contaCliente" action="create" params="['conta.id': contaInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'contaCliente.label', default: 'ContaCliente')])}</g:link>
+</li>
+</ul>
+
+
+</div>
+
