@@ -13,4 +13,8 @@ class Conta {
     String numero
     double saldo
     Date abertura
+
+    String toString() {
+        return numero
+    }
 }

@@ -10,6 +10,7 @@ class ExtratoService {
     public static final Integer EXTRATO_ULTIMOS_30_DIAS = 30
 
     def emitirExtrato(ContaCliente contaCliente, Integer tipoExtrato) {
+
         int numeroDias = EXTRATO_ULTIMOS_7_DIAS
         switch (tipoExtrato) {
             case EXTRATO_ULTIMOS_7_DIAS:
@@ -26,14 +27,13 @@ class ExtratoService {
         Date dataMaxima = calendar.time
         calendar.add(Calendar.DAY_OF_YEAR, -numeroDias); //subtraindo o número de dias selecionado
         Date dataMinima = calendar.time
-
-        return contaCliente.transacoes.collect{
-            if (it.data.compareTo(dataMaxima)<=0 &&
-                    it.data.compareTo(dataMinima)>=0){
-                it
+        def transacoes = []
+        contaCliente.transacoes.each {
+            if (it.data.compareTo(dataMaxima) <= 0 &&
+                    it.data.compareTo(dataMinima) >= 0) {
+                transacoes << it
             }
-
         }
-
+        return transacoes
     }
 }
