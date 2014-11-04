@@ -101,4 +101,15 @@ class ContaClienteController {
             '*'{ render status: NOT_FOUND }
         }
     }
+
+    def listarContasComCliente(String nomeCliente, Integer max) {
+        nomeCliente= nomeCliente?:""
+        params.max = Math.min(max ?: 10, 100)
+        def consulta = ContaCliente.where{
+            'cliente' {
+                ilike("nome", "${nomeCliente}%")
+            }
+        }
+        respond consulta.list(params), view: 'index', model: [contaClienteInstanceCount: consulta.size(), nomeCliente: nomeCliente]
+    }
 }
