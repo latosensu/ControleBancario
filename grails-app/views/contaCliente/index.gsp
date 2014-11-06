@@ -18,7 +18,7 @@
 		<div id="list-contaCliente" class="content scaffold-list" role="main">
             <div>
                 <g:form controller="contaCliente" action="listarContasComCliente">
-                    <p><label for="nome-cliente"><g:message code="conta.filtro.label" default="Filtrar contas com saldo igual ou superior a:"></g:message></label></p>
+                    <p><label for="nome-cliente"><g:message code="conta.filtro.label" default="Filtrar contas de clientes com o nome:"></g:message></label></p>
                     <g:textField  id="nome-cliente" name="nomeCliente" value=""></g:textField>
                     <g:submitButton name="filtrar-conta" value="Filtrar"/>
                 </g:form>
@@ -39,6 +39,8 @@
 
                         <g:sortableColumn property="titular" title="${message(code: 'contaCliente.titular.label', default: 'Titular')}" />
 
+                        <th>Ação</th>
+
                     </tr>
                 </thead>
 				<tbody>
@@ -52,6 +54,8 @@
 						<td>${fieldValue(bean: contaClienteInstance, field: "conta")}</td>
 					
 						<td><g:formatBoolean boolean="${contaClienteInstance.titular}" /></td>
+
+                        <td><g:link controller="extrato" action="emitirExtrato" id="${contaClienteInstance.id}">Emitir extrato</g:link> </td>
 					
 					</tr>
 				</g:each>
